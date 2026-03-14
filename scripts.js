@@ -247,14 +247,14 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.disabled = true;
 
       var data = {
-        formType: 'booking',
+        formType: 'consultation',
         package: bookingForm.querySelector('select[name="package"]') ? bookingForm.querySelector('select[name="package"]').value : '',
         name: bookingForm.querySelector('input[name="name"]').value.trim(),
         email: bookingForm.querySelector('input[name="email"]').value.trim(),
         phone: bookingForm.querySelector('input[name="phone"]').value.trim(),
         address: bookingForm.querySelector('input[name="address"]') ? bookingForm.querySelector('input[name="address"]').value.trim() : '',
-        date: bookingForm.querySelector('input[name="preferredDate"]') ? bookingForm.querySelector('input[name="preferredDate"]').value : '',
-        time: bookingForm.querySelector('input[name="preferredTime"]') ? bookingForm.querySelector('input[name="preferredTime"]').value : ''
+        preferredDate: bookingForm.querySelector('input[name="preferredDate"]') ? bookingForm.querySelector('input[name="preferredDate"]').value : '',
+        preferredTime: bookingForm.querySelector('input[name="preferredTime"]') ? bookingForm.querySelector('input[name="preferredTime"]').value : ''
       };
 
       fetch(SCRIPT_URL, {
