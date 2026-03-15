@@ -404,6 +404,11 @@ footer h3{ font-size:0.95rem; margin-bottom:0.75rem; }
     z-index: 200;
   }
   .nav-links.open { display: flex; }
+  nav { padding: 1rem; }
+  .nav-links li:nth-child(2),   /* Services */
+  .nav-links li:nth-child(6) {  /* Consultation */
+    display: none;
+  }
   .nav-links li a { display: block; padding: 0.85rem 2rem; font-size: 1rem; border-bottom: 1px solid var(--border); }
 
   .hero,
@@ -456,6 +461,13 @@ footer h3{ font-size:0.95rem; margin-bottom:0.75rem; }
    ============================================= */
 @media (max-width: 480px) {
   nav { padding: 1rem; }
+  .nav-links li:nth-child(2),   /* Services */
+  .nav-links li:nth-child(6) {  /* Consultation */
+    display: none;
+  }
+  .nav-links li a {
+    padding: 0.35rem 2rem;
+  }
   .logo { font-size: 1rem; }
 
   h1 { font-size: 1.9rem; }
@@ -470,7 +482,7 @@ footer h3{ font-size:0.95rem; margin-bottom:0.75rem; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
   .stats-strip { padding: 2.5rem 0; overflow: hidden; }
   .stat-card { padding: 1.5rem 1rem; text-align: center; }
-  .stat-number { font-size: 38px; }
+  .stat-number { font-size: 30px; }
 
   .test-grid { grid-template-columns: 1fr 1fr; }
   .testimonial-card:last-child { display: none; }
